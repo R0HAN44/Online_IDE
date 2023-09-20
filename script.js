@@ -10,6 +10,18 @@ let status_detail;
 let output_url;
 let language = "C";
 let delay = 4000;
+var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
+  mode: "text/x-c++src",
+  theme: "3024-night",
+  lineNumbers: true,
+  lineWrapping: true,
+  autoCloseBrackets: true,
+  matchBrackets: true,
+  keyMap: "sublime",
+  extraKeys: { "Ctrl-Space": "autocomplete" },
+  scrollbarStyle: "overlay",
+});
+editor.setSize("70vw", "80vh");
 const url =
   "https://api.hackerearth.com/v4/partner/code-evaluation/submissions/";
 const compileCode = async () => {
@@ -90,19 +102,6 @@ runButton.addEventListener("click", () => {
     compileCode();
   }
 });
-
-var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
-  mode: "text/x-c++src",
-  theme: "3024-night",
-  lineNumbers: true,
-  lineWrapping: true,
-  autoCloseBrackets: true,
-  matchBrackets: true,
-  keyMap: "sublime",
-  extraKeys: { "Ctrl-Space": "autocomplete" },
-  scrollbarStyle: "overlay",
-});
-editor.setSize("70vw", "80vh");
 
 var option = document.getElementById("Language");
 option.addEventListener("change", () => {
