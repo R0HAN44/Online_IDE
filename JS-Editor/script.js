@@ -46,9 +46,15 @@ jseditor.setSize("100%", "28%");
 htmleditor.setValue("");
 csseditor.setValue("");
 jseditor.setValue("");
-htmleditor.setValue(localStorage.getItem("htmlcode"));
-csseditor.setValue(localStorage.getItem("csscode"));
-jseditor.setValue(localStorage.getItem("jscode"));
+if (localStorage.getItem("htmlcode")) {
+  htmleditor.setValue(localStorage.getItem("htmlcode"));
+}
+if (localStorage.getItem("csscode")) {
+  csseditor.setValue(localStorage.getItem("csscode"));
+}
+if (localStorage.getItem("jscode")) {
+  jseditor.setValue(localStorage.getItem("jscode"));
+}
 
 htmleditor.on("change", function () {
   run();
