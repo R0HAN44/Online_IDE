@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "axios": "^1.5.0",
+    "codemirror": "^5.65.15",
+    "hackerearth-v4-node": "^1.0.0"
+  }
+}

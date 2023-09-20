@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Studio</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./images/code-solid.ico">
+  <script type="module" src="./script.js" defer></script>
+  <script src="https://kit.fontawesome.com/7382879f33.js" crossorigin="anonymous"></script>
+  <!-- Code mirror css and js -->
+  <link rel="stylesheet" href="./node_modules/codemirror/lib/codemirror.css">
+  <script src="./node_modules/codemirror/lib/codemirror.js"></script>
+  <!-- codemirror languages -->
+  <script src="./node_modules/codemirror/mode/clike/clike.js"></script>
+  <script src="./node_modules/codemirror/mode/python/python.js"></script>
+  <script src="./node_modules/codemirror/mode/javascript/javascript.js"></script>
+
+  <!-- codemirror themes-->
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/3024-day.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/3024-night.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/abbott.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/abcdef.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/ambiance.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/ambiance-mobile.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/ayu-dark.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/ayu-mirage.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/base16-dark.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/base16-light.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/bespin.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/blackboard.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/base16-light.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/cobalt.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/colorforth.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/darcula.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/dracula.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/eclipse.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/elegant.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/material-darker.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/material.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/material-ocean.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/paraiso-dark.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/paraiso-light.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/pastel-on-dark.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/solarized.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/tomorrow-night-bright.css">
+  <link rel="stylesheet" href="./node_modules/codemirror/theme/tomorrow-night-eighties.css">
+
+  <!-- codemirror addons -->
+  <script src="./node_modules/codemirror/addon/edit/closebrackets.js"></script>
+  <script src="./node_modules/codemirror/addon/edit/matchbrackets.js"></script>
+  <script src="./node_modules/codemirror/addon/hint/show-hint.js"></script>
+  <link rel="stylesheet" href="./node_modules/codemirror/addon/hint/show-hint.css">
+  </link>
+  <script src="./node_modules/codemirror/keymap/sublime.js"></script>
+  <link rel="stylesheet" href="./node_modules/codemirror/addon/scroll/simplescrollbars.css">
+  </link>
+  <script src="./node_modules/codemirror/addon/scroll/simplescrollbars.js"></script>
+  <script src="./node_modules/codemirror/addon/scroll/simplescrollbars.js"></script>
+  <link rel="stylesheet" href="./node_modules/codemirror/addon/fold/foldgutter.css">
+  <script src="./node_modules/codemirror/addon/fold/foldgutter.js"></script>
+  <script src="./node_modules/codemirror/addon/fold/foldcode.js"></script>
+  <script src="./node_modules/codemirror/addon/wrap/hardwrap.js"></script>
+  <script src="./node_modules/codemirror/addon/display/placeholder.js"></script>
+
+
+
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <div id="logo">
+        <i class="fa-solid fa-code pnglogo" style="color: #29d177;"></i>
+        <h1 id="codetitle">Code <span class="studio">Studio</span></h1>
+      </div>
+      <div class="langtheme">
+        <div class="select">
+          <label for="Language" class="language">Language:</label>
+          <select name="Language" id="Language">
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+          </select>
+        </div>
+        <div class="themes">
+          <label for="theme" class="theme">Theme:</label>
+          <select name="theme" id="theme">
+            <option>3024-day</option>
+            <option selected="">3024-night</option>
+            <option>abbott</option>
+            <option>abcdef</option>
+            <option>ambiance</option>
+            <option>ayu-dark</option>
+            <option>ayu-mirage</option>
+            <option>base16-dark</option>
+            <option>base16-light</option>
+            <option>bespin</option>
+            <option>blackboard</option>
+            <option>cobalt</option>
+            <option>colorforth</option>
+            <option>darcula</option>
+            <option>dracula</option>
+            <option>eclipse</option>
+            <option>material</option>
+            <option>material-darker</option>
+            <option>material-palenight</option>
+            <option>material-ocean</option>
+            <option>paraiso-dark</option>
+            <option>paraiso-light</option>
+            <option>pastel-on-dark</option>
+            <option>solarized</option>
+            <option>tomorrow-night-bright</option>
+            <option>tomorrow-night-eighties</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <button id="runButton">Run<i class="fa-solid fa-play"></i></button>
+      </div>
+
+      <div>
+        <button class="htmlbutton"><a href="./JS-Editor/index.html">HTML,CSS,JS Live Editor</a></button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="editor">
+      <textarea id="editor" placeholder="Enter the code here"></textarea>
+      <div class="right">
+        <label for="input" class="inputtext">Input</label>
+        <textarea rows="5" cols="30" id="input"></textarea>
+        <label for="output" class="outputtext">Output</label>
+        <div id="output">
+          <p id="status_detail"></p>
+          <p id="time_used"></p>
+          <p id="memory_used"></p>
+          <button class="downloadButton"><a href="" id="download_button" download="output.txt">Download
+              Output</a></button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
+</html>

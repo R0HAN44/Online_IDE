@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML, CSS & JS Live Editor</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="../images/code-solid.ico">
+  <script type="module" src="./script.js" defer></script>
+  <script src="https://kit.fontawesome.com/7382879f33.js" crossorigin="anonymous"></script>
+
+  <!-- CodeMirror -->
+  <link rel="stylesheet" href="./codemirror/lib/codemirror.css">
+  <script src="./codemirror/lib/codemirror.js"></script>
+  <script src="../node_modules/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+  <script src="../node_modules/codemirror/mode/htmlembedded/htmlembedded.js"></script>
+  <script src="../node_modules/codemirror/mode/css/css.js"></script>
+  <script src="../node_modules/codemirror/mode/javascript/javascript.js"></script>
+  <script src="../node_modules/codemirror/keymap/sublime.js"></script>
+  <script src="../node_modules/codemirror/addon/edit/closebrackets.js"></script>
+  <script src="../node_modules/codemirror/addon/edit/closetag.js"></script>
+  <script src="../node_modules/codemirror/addon/edit/matchbrackets.js"></script>
+  <script src="../node_modules/codemirror/addon/edit/matchtags.js"></script>
+  <script src="../node_modules/codemirror/addon/edit/trailingspace.js"></script>
+  <script src="../node_modules/codemirror/addon/scroll/simplescrollbars.js"></script>
+  <script src="../node_modules/codemirror/addon/fold/xml-fold.js"></script>
+  <script src="../node_modules/codemirror/mode/xml/xml.js"></script>
+  <link rel="stylesheet" href="../node_modules/codemirror/addon/scroll/simplescrollbars.css">
+
+
+  <!-- Themes -->
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/3024-day.css">
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/3024-night.css">
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/abbott.css">
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/abcdef.css">
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/ambiance.css">
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/ambiance-mobile.css">
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/ayu-dark.css">
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/ayu-mirage.css">
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/base16-dark.css">
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/base16-light.css">
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/bespin.css">
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/blackboard.css">
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/base16-light.css">
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/cobalt.css">
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/colorforth.css">
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/darcula.css">
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/dracula.css">
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/eclipse.css">
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/elegant.css">
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/material-darker.css">
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/material.css">
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/material-ocean.css">
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/paraiso-dark.css">
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/paraiso-light.css">
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/pastel-on-dark.css">
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/solarized.css">
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/tomorrow-night-bright.css">
+  <link rel="stylesheet" href="../node_modules/codemirror/theme/tomorrow-night-eighties.css">
+
+
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-left">
+      <i class="fa-solid fa-code"></i>
+      <h1><span class="htmltitle">HTML </span>, <span class="csstitle">CSS</span> & <span
+          class="jstitle">JavaScript</span>
+        Editor</h1>
+    </div>
+    <div class="header-right">
+      <div class="themes">
+        <label for="theme" class="theme">Theme:</label>
+        <select name="theme" id="theme">
+          <option>3024-day</option>
+          <option>3024-night</option>
+          <option>abbott</option>
+          <option>abcdef</option>
+          <option>ambiance</option>
+          <option>ayu-dark</option>
+          <option>ayu-mirage</option>
+          <option>base16-dark</option>
+          <option>base16-light</option>
+          <option>bespin</option>
+          <option>blackboard</option>
+          <option>cobalt</option>
+          <option>colorforth</option>
+          <option>darcula</option>
+          <option selected="">dracula</option>
+          <option>eclipse</option>
+          <option>material</option>
+          <option>material-darker</option>
+          <option>material-palenight</option>
+          <option>material-ocean</option>
+          <option>paraiso-dark</option>
+          <option>paraiso-light</option>
+          <option>pastel-on-dark</option>
+          <option>solarized</option>
+          <option>tomorrow-night-bright</option>
+          <option>tomorrow-night-eighties</option>
+        </select>
+      </div>
+    </div>
+
+  </div>
+  <hr>
+  <div class="container">
+    <div class="left">
+      <label><i class="fa-brands fa-html5 htmllogo"></i>HTML</label>
+      <textarea id="html-code"></textarea>
+      <label><i class="fa-brands fa-css3-alt csslogo"></i>CSS</label>
+      <textarea id="css-code"></textarea>
+      <label><i class="fa-brands fa-js jslogo"></i>JavaScript</label>
+      <textarea id="js-code"></textarea>
+    </div>
+    <div class="right">
+      <label id="outputtitle" style="color: rgb(47, 255, 123);">Output</label>
+      <iframe id="output"></iframe>
+    </div>
+  </div>
+</body>
+
+</html>

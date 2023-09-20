@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Poppins',sans-serif; */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  height: 100vh;
+  background-color: rgb(195, 206, 206) ;
+  color: whitesmoke ;
+  opacity: .9;
+}
+#logo{
+  display: flex;
+  align-items: center;
+}
+#codetitle{
+  font-weight: 500;
+}
+.pnglogo{
+  font-size: 50px;
+  margin: 0 10px;
+  opacity: .9;
+}
+.studio {
+  color: rgb(41, 201, 131,.9);
+}
+.header{
+  background-color: rgb(28, 28, 28);
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Poppins', sans-serif;
+  padding: 40px 0px;
+}
+.editor{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0px;
+}
+.right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #282828;
+  padding: 10px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  width: 25vw;
+  border-radius: 10px;
+}
+.langtheme{
+  display: flex;
+  gap: 40px;
+}
+.htmlbutton{
+  font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    background-color: rgb(41, 201, 131, .9);
+    color: whitesmoke;
+    padding: 8px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.htmlbutton>a{
+  text-decoration: none;
+  color: white;
+}
+.htmlbutton:hover{
+  cursor: pointer;
+  opacity: .9;
+}
+#runButton{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgb(41, 201, 131);
+  padding: 8px 20px;
+  border-radius: 5px;
+  outline: none;
+}
+#runButton:hover{
+  background-color: rgb(41, 201, 131);
+  cursor: pointer;
+}
+.language{
+  font-size: 18px;
+}
+#Language{
+  font-size: 16px;
+  text-align: center;
+  outline: none;
+  padding: 5px;
+  border: 1px solid rgb(41, 201, 131);
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+}
+#Language:focus{
+  background-color: rgb(0, 0, 0);
+}
+#theme{
+  font-size: 16px;
+    text-align: center;
+    outline: none;
+    padding: 5px;
+    border: 1px solid rgb(41, 201, 131);
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+}
+#theme:focus {
+  background-color: rgb(0, 0, 0, .9);
+}
+.theme{
+  font-size: 18px;
+}
+
+#editor{
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.inputtext{
+  font-size: 32px;
+  color:rgb(41, 201, 131) ;
+}
+#input{
+  width: 90%;
+  outline: none;
+  font-size: 24px;
+  font-weight: 500;
+  height: 40%;
+  background-color: #e0ffea;
+  border-radius: 10px;
+  padding: 10px;
+}
+.outputtext {
+  font-size: 32px;
+  color: rgb(41, 201, 131);
+}
+.downloadButton{
+  font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    background-color: rgb(41, 201, 131, .9);
+    color: whitesmoke;
+    padding: 8px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    align-self: center;
+    border: 1px solid black;
+}
+.downloadButton:hover{
+  cursor: pointer;
+  opacity: .9;
+}
+.downloadButton > a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+#output{
+  width: 90%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 10px;
+  gap: 20px;
+  background-color: #e0ffea;
+  border-radius: 10px;
+}
+#output>p{
+  font-size: 22px;
+  font-weight: 500;
+  color: black;
+}
