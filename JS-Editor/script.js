@@ -43,7 +43,9 @@ let jseditor = CodeMirror.fromTextArea(document.getElementById("js-code"), {
 });
 
 jseditor.setSize("100%", "28%");
-
+htmleditor.setValue("");
+csseditor.setValue("");
+jseditor.setValue("");
 htmleditor.setValue(localStorage.getItem("htmlcode"));
 csseditor.setValue(localStorage.getItem("csscode"));
 jseditor.setValue(localStorage.getItem("jscode"));
