@@ -1,6 +1,6 @@
 # CodeStuido - Online IDE
 
-## Website Live here! - [Click Here!](https://r0han44.github.io/Online_IDE/)
+## Website Live here! - <a href="https://r0han44.github.io/Online_IDE/" target="_blank">Click Here!</a>
 
 Compile & run your code with the CodeStudio online IDE. Online-Ide is a quick and easy tool that helps you to build, compile, test your programs online. This online compiler supports multiple programming languages like Python, C++, C, Java, JavaScript.
 
