@@ -1,16 +1,19 @@
 <p align="center">
   <a href="https://codesandbox.io">
-    <img src="https://codesandbox.io/static/img/banner.png?v=2" height="300px">
+    <img src="https://github.com/R0HAN44/Online_IDE/blob/main/images/Code-Studio.png" height="500px">
+  </br>
+  </br>
+    <hr>
+  </br>
+  </br>
+    <img src="https://github.com/R0HAN44/Online_IDE/blob/main/images/HTML-CSS-JS-Live-Editor.png" height="500px">
   </a>
 </p>
 
 &nbsp;
 
 
-An instantly ready, full-featured online IDE for web development on any device
-with a browser. Enabling you to start new projects quickly and prototype
-rapidly. With CodeSandbox, you can create web apps, experiment with code, test
-ideas, and share creations easily.
+Compile & run your code with the CodeStudio online IDE. Online-Ide is a quick and easy tool that helps you to build, compile, test your programs online. This online compiler supports multiple programming languages like Python, C++, C, Java, JavaScript.
 
 ## Other CodeSandbox repositories
 
